@@ -1,5 +1,6 @@
 {
-  "name": "hydrogen-quickstart",
+  "homepage": "https://4j4y.github.io/shopify-hydrogen",
+  "name": "shopify-hydrogen",
   "private": true,
   "sideEffects": false,
   "version": "2025.5.1",
@@ -9,7 +10,9 @@
     "dev": "shopify hydrogen dev --codegen",
     "preview": "shopify hydrogen preview --build",
     "lint": "eslint --no-error-on-unmatched-pattern .",
-    "codegen": "shopify hydrogen codegen"
+    "codegen": "shopify hydrogen codegen",
+    "predeploy": "shopify hydrogen build --codegen",
+    "deploy": "gh-pages -d build"
   },
   "prettier": "@shopify/prettier-config",
   "dependencies": {
@@ -50,6 +53,7 @@
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.1.0",
+    "gh-pages": "^6.3.0",
     "globals": "^15.14.0",
     "prettier": "^3.4.2",
     "typescript": "^5.2.2",
